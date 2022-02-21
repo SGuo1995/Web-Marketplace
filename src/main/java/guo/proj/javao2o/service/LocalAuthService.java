@@ -6,7 +6,7 @@ import guo.proj.javao2o.exceptions.LocalAuthOperationException;
 
 public interface LocalAuthService {
     /**
-     * 通过帐号和密码获取平台帐号信息
+     * Acquire account info via userName and password
      *
      * @param userName
      * @return
@@ -14,7 +14,7 @@ public interface LocalAuthService {
     LocalAuth getLocalAuthByUsernameAndPwd(String userName, String password);
 
     /**
-     * 通过userId获取平台帐号信息
+     * Get account info via userId
      *
      * @param userId
      * @return
@@ -22,7 +22,7 @@ public interface LocalAuthService {
     LocalAuth getLocalAuthByUserId(long userId);
 
     /**
-     * 绑定微信，生成平台专属的帐号
+     * Connect to WeChat
      *
      * @param localAuth
      * @return
