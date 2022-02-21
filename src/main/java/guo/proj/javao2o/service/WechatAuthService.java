@@ -7,7 +7,7 @@ import guo.proj.javao2o.exceptions.WechatAuthOperationException;
 public interface WechatAuthService {
 
     /**
-     * 通过openId查找平台对应的微信帐号
+     * Get WeChat account via openId.
      *
      * @param openId
      * @return
@@ -15,7 +15,7 @@ public interface WechatAuthService {
     WechatAuth getWechatAuthByOpenId(String openId);
 
     /**
-     * 注册本平台的微信帐号
+     * Register WeChat account
      *
      * @param wechatAuth
      * @return
