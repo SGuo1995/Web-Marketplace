@@ -29,7 +29,7 @@ public interface ProductService {
                                    List<ImageHolder> productImgList) throws ProductOperationException;
 
     /**
-     * 查询商品列表并分页，可输入的条件有： 商品名（模糊），商品状态，店铺Id,商品类别
+     * Get product list and do pagination. The filter can be: product name, product status, shopId, product category.
      *
      * @param productCondition
      * @param pageIndex
